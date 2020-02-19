@@ -1,10 +1,25 @@
 # CypressFramework
 
 
-Mocha Awesom Report
+mochawesome
+
+Mochawesome is a custom reporter for use with the Javascript testing framework, mocha. It runs on Node.js (>=8) and works in conjunction with mochawesome-report-generator to generate a standalone HTML/CSS report to help visualize your test runs.
+
+Features
+Mochawesome Report
+
+- Simple, clean, and modern design
+- Beautiful charts (via ChartJS)
+- Support for test and suite nesting
+- Displays before and after hooks
+- Review test code inline
+- Stack trace for failed tests
+- Support for adding context information to tests
+- Filters to display only the tests you want
+- Responsive and mobile-friendly
+- Offline viewing
 
 Essential packages
-
 
 "mocha": "5.2.0", 
 "mochawesome": "4.1.0", 
