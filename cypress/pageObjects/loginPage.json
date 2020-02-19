@@ -1,0 +1,5 @@
+{
+  "Email": "#username",
+  "Password": "#password",
+  "ContinueButton": "#login-submit > .css-1vqao0l > .css-t5emrf > span"
+}

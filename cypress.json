@@ -1,0 +1,21 @@
+{
+  "viewportWidth": 1535,
+  "viewportHeight": 877,
+  "watchForFileChanges": true,
+  "baseUrl": "https://www.atlassian.com",
+  "env":
+  {
+    "uiValidationThreshold": "0.03"
+  },
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  }
+}
