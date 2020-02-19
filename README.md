@@ -24,6 +24,10 @@ Mochawesome is a custom reporter for use with the Javascript testing framework, 
 - Offline viewing
 
 ## Essential packages
+
+I’ll show you now how to configure mochawesome reports. Let’s start by installing all the necessary packages. A good piece of advice is not to use the “mocha”: “latest” command. The latest version is usually unstable and it may have a negative impact on the generated reports.
+
+
  ```
 "mocha": "5.2.0", 
 "mochawesome": "4.1.0", 
@@ -32,6 +36,9 @@ Mochawesome is a custom reporter for use with the Javascript testing framework, 
  ```
 
 ## Report configuration in cypress.json
+
+Now, let’s add our reporter’s configuration to the cypress.json file. Much like before, I avoided “reporter”: “mochawesome” due to stability issues.
+
  ```
 "reporter": "./node_modules/mochawesome/src/mochawesome.js", 
 "reporterOptions": 
@@ -42,9 +49,17 @@ Mochawesome is a custom reporter for use with the Javascript testing framework, 
 	"json": true 
 }
  ```
+ 
+ Let’s explain what’s happening here:
+
+reportDir – it’s the directory to which we’re going to output the results of our tests.
+The overwrite flag – toggles the rule that allows/disallows overwriting previous reports.
+The html flag – generates a report when a test is completed.
+The json flag – generates a json file for each completed test.
 
 ## Script configuration in package.json
  ```
+ 
 "clean-reports":"rm -rf cypress/reports", 
 "test": "npx cypress run", 
 "merge-report": "npx mochawesome-merge --reportDir cypress/reports/separate-reports cypress/reports/full_report.json", 
@@ -52,3 +67,8 @@ Mochawesome is a custom reporter for use with the Javascript testing framework, 
 "after:tests": "npm run merge-report; npm run generate-report", 
 "cypress": "npm run clean-reports; npm run test; npm run after:tests"
  ```
+
+* clean:reports” – removes the directory that contain reports before new tests are run 
+* “tests” – launches tests through Cypress.
+* “report:merge-report” – combines all the generated json reports for every single test file in one report.
+* “report:generate-report” – generates a complete HTML report from the merged json file.
