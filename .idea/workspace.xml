@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fc5f9ce-d378-4054-a066-f02a032bdc39" name="Default Changelist" comment="" />
+    <list default="true" id="7fe98aa7-7a3e-4230-a2f2-0c8b925c9db5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1Xyo61yUbDB5N0NLbsS3PYJjlTJ" />
+  <component name="ProjectId" id="1Y3j5AcmJmc4ecRBVrOJ7gsGwe4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -40,36 +40,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6fc5f9ce-d378-4054-a066-f02a032bdc39" name="Default Changelist" comment="" />
-      <created>1582027516412</created>
+      <changelist id="7fe98aa7-7a3e-4230-a2f2-0c8b925c9db5" name="Default Changelist" comment="" />
+      <created>1582177985519</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582027516412</updated>
-      <workItem from="1582027517810" duration="1156000" />
-      <workItem from="1582083389923" duration="582000" />
-      <workItem from="1582103536643" duration="211000" />
+      <updated>1582177985519</updated>
+      <workItem from="1582177987130" duration="2304000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1582028674067">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582028674067" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1582028674066">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582028674066" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1582028674066">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582028674066" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1582028674066">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582028674066" />
   </component>
 </project>

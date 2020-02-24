@@ -10,6 +10,7 @@ context('testsuite', ()=> {
     })
 
     it('testCaseOne', () => {
+        I.ValidateUI(HomePage.Logo)
         I.Click(HomePage.LoginLink)
         I.Fill(LoginPage.Email, TestData.UserData.Email)
         I.Click(LoginPage.ContinueButton)

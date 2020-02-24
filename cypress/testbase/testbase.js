@@ -26,3 +26,14 @@ export function DontSee(locator)
     else
         cy.get(locator).should('not.be.visible')
 }
+
+export function UploadFile(locator, fileName) {
+    cy.fixture(fileName).then(fileContent => {
+        cy.get(locator).upload({fileContent, fileName, mimeType: 'application/json'});
+    });
+}
+
+export function ValidateUI(locator)
+{
+    cy.get(locator).matchImageSnapshot();
+}
