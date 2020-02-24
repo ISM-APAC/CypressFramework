@@ -1,74 +1,39 @@
-# CypressFramework
+# Cypress Test Automation Framework For SANA Commerce
+
+A test automation framework based on Cypress aligning with the Syntax of Sana test automation framework
+
+## Web UI test automation
+
+* [Cypress.io](https://github.com/cypress-io/cypress) - Fast, easy and reliable testing for anything that runs in a browser. Runs on Mac, Linux, Windows and any CI.
+
+## Reporting
+
+* [Mochawesome](https://github.com/adamgruber/mochawesome) - reporter for Mocha that generates a full fledged HTML/CSS report that helps visualize your test suites
+
+## Visual Testing
+
+* [Cypress Image Snapshot](https://github.com/palmerhq/cypress-image-snapshot) - Cypress Image Snapshot binds jest-image-snapshot's image diffing logic to Cypress.io commands.
+
+## Installation
+
+* [Documentation - Get Start] (https://docs.cypress.io/guides/getting-started/)
+
+```bash
+npm install - Install Node dependancies
+
+npm run test - Run all test specs
+
+npx cypress Open - Open Cypress execution panel
+```
 
 
-mochawesome
-===========
-[![npm](https://img.shields.io/npm/v/mochawesome.svg?style=flat-square)](http://www.npmjs.com/package/mochawesome) [![Build Status](https://img.shields.io/travis/adamgruber/mochawesome/master.svg?style=flat-square)](https://travis-ci.org/adamgruber/mochawesome) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square)](https://gitter.im/mochawesome/general) [![Code Climate](https://img.shields.io/codeclimate/coverage/adamgruber/mochawesome.svg?style=flat-square)](https://codeclimate.com/github/adamgruber/mochawesome)
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Mochawesome is a custom reporter for use with the Javascript testing framework, [mocha][mocha]. It runs on Node.js (>=8) and works in conjunction with [mochawesome-report-generator][marge] to generate a standalone HTML/CSS report to help visualize your test runs.
+Please make sure to update tests as appropriate & please follow the coding standards!
 
+## Authors
 
-## Features
-
-<img align="right" src="./docs/marge-report-1.0.1.png" alt="Mochawesome Report" width="55%" />
-
-- Simple, clean, and modern design
-- Beautiful charts (via ChartJS)
-- Support for test and suite nesting
-- Displays before and after hooks
-- Review test code inline
-- Stack trace for failed tests
-- Support for adding context information to tests
-- Filters to display only the tests you want
-- Responsive and mobile-friendly
-- Offline viewing
-
-## Essential packages
-
-I’ll show you now how to configure mochawesome reports. Let’s start by installing all the necessary packages. A good piece of advice is not to use the “mocha”: “latest” command. The latest version is usually unstable and it may have a negative impact on the generated reports.
-
-
- ```
-"mocha": "5.2.0", 
-"mochawesome": "4.1.0", 
-"mochawesome-merge": "2.0.1", 
-"mochawesome-report-generator": "4.0.1"
- ```
-
-## Report configuration in cypress.json
-
-Now, let’s add our reporter’s configuration to the cypress.json file. Much like before, I avoided “reporter”: “mochawesome” due to stability issues.
-
- ```
-"reporter": "./node_modules/mochawesome/src/mochawesome.js", 
-"reporterOptions": 
-{ 
-	"reportDir": "cypress/reports/separate-reports", 
-	"overwrite": false, 
-	"html": false, 
-	"json": true 
-}
- ```
- 
- Let’s explain what’s happening here:
-
-reportDir – it’s the directory to which we’re going to output the results of our tests.
-The overwrite flag – toggles the rule that allows/disallows overwriting previous reports.
-The html flag – generates a report when a test is completed.
-The json flag – generates a json file for each completed test.
-
-## Script configuration in package.json
- ```
- 
-"clean-reports":"rm -rf cypress/reports", 
-"test": "npx cypress run", 
-"merge-report": "npx mochawesome-merge --reportDir cypress/reports/separate-reports cypress/reports/full_report.json", 
-"generate-report": "npx mochawesome-report-generator --reportDir cypress/reports cypress/reports/full_report.json", 
-"after:tests": "npm run merge-report; npm run generate-report", 
-"cypress": "npm run clean-reports; npm run test; npm run after:tests"
- ```
-
-* clean:reports” – removes the directory that contain reports before new tests are run 
-* “tests” – launches tests through Cypress.
-* “report:merge-report” – combines all the generated json reports for every single test file in one report.
-* “report:generate-report” – generates a complete HTML report from the merged json file.
+* Chathuranga Jayasinghe - c.jayasinghe@sana-commerce.com
+* Lasitha Wijenayake - l.wijenayake@sana-commerce.com
+* Channa Bandara - c.bandara@sana-commerce.com
